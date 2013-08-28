@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RGTransparentView.h"   
+
 @interface RGViewController : UIViewController
 
 @end

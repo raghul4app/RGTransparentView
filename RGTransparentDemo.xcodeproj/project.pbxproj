@@ -19,6 +19,8 @@
 		8F858EDE17CDCB2500C65537 /* RGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F858EDD17CDCB2500C65537 /* RGViewController.m */; };
 		8F858EE117CDCB2500C65537 /* RGViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F858EDF17CDCB2500C65537 /* RGViewController_iPhone.xib */; };
 		8F858EE417CDCB2500C65537 /* RGViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F858EE217CDCB2500C65537 /* RGViewController_iPad.xib */; };
+		8F858EED17CDCB3800C65537 /* RGTransparentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F858EEC17CDCB3800C65537 /* RGTransparentView.m */; };
+		8F858EEF17CDCBA500C65537 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F858EEE17CDCBA500C65537 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		8F858EDD17CDCB2500C65537 /* RGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGViewController.m; sourceTree = "<group>"; };
 		8F858EE017CDCB2500C65537 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RGViewController_iPhone.xib; sourceTree = "<group>"; };
 		8F858EE317CDCB2500C65537 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RGViewController_iPad.xib; sourceTree = "<group>"; };
+		8F858EEB17CDCB3800C65537 /* RGTransparentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTransparentView.h; sourceTree = "<group>"; };
+		8F858EEC17CDCB3800C65537 /* RGTransparentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTransparentView.m; sourceTree = "<group>"; };
+		8F858EEE17CDCBA500C65537 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F858EEF17CDCBA500C65537 /* QuartzCore.framework in Frameworks */,
 				8F858EC517CDCB2500C65537 /* UIKit.framework in Frameworks */,
 				8F858EC717CDCB2500C65537 /* Foundation.framework in Frameworks */,
 				8F858EC917CDCB2500C65537 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +64,7 @@
 		8F858EB817CDCB2500C65537 = {
 			isa = PBXGroup;
 			children = (
+				8F858EEE17CDCBA500C65537 /* QuartzCore.framework */,
 				8F858ECA17CDCB2500C65537 /* RGTransparentDemo */,
 				8F858EC317CDCB2500C65537 /* Frameworks */,
 				8F858EC217CDCB2500C65537 /* Products */,
@@ -85,6 +92,7 @@
 		8F858ECA17CDCB2500C65537 /* RGTransparentDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8F858EEA17CDCB3800C65537 /* CustomView */,
 				8F858ED317CDCB2500C65537 /* RGAppDelegate.h */,
 				8F858ED417CDCB2500C65537 /* RGAppDelegate.m */,
 				8F858EDC17CDCB2500C65537 /* RGViewController.h */,
@@ -108,6 +116,15 @@
 				8F858EDA17CDCB2500C65537 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F858EEA17CDCB3800C65537 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				8F858EEB17CDCB3800C65537 /* RGTransparentView.h */,
+				8F858EEC17CDCB3800C65537 /* RGTransparentView.m */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +198,7 @@
 				8F858ED117CDCB2500C65537 /* main.m in Sources */,
 				8F858ED517CDCB2500C65537 /* RGAppDelegate.m in Sources */,
 				8F858EDE17CDCB2500C65537 /* RGViewController.m in Sources */,
+				8F858EED17CDCB3800C65537 /* RGTransparentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
